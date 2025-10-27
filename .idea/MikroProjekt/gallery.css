@@ -1,0 +1,140 @@
+footer {
+    font-size: x-small;
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+.gallery {
+    background-color: #1f2833;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-container {
+    margin-bottom: 50px;
+    padding: 5px 0;
+}
+
+.photos {
+    margin: 0;
+    padding-bottom: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 60px;
+    flex-wrap: wrap;
+    max-width: calc(3*450px + 2*60px);
+}
+
+.box {
+    width: 450px;
+    height: 450px;
+    background: whitesmoke;
+}
+
+.one {
+    background-image: url("https://www.newhaven.edu/_resources/images/news/non-college-specific/blog/2022/career-expo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.two {
+    background-image: url("https://www.careerexpo.com.au/wp-content/uploads/2021/11/career-expo-attend-large.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.three {
+    background-image: url("https://www.lotos.pl/webimage/upload/photos/1281_app_photos_path_4_full.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.four {
+    background-image: url("https://careerservices.erau.edu/-/media/images/career-services/20190228-career-expo-1109-1.jpg?as=0&hash=B6038300744AA3592C9BFEAF8325E63E");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.five {
+    background-image: url("https://www.bpmcdn.com/f/files/shared/impress/impress-2024/dec-3024/victoria-career-expo/gv-2-2024_1.jpg;w=960");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.six {
+    background-image: url("https://portal.umk.pl/uploads/piernikowetargipracy2023-portal1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.seven {
+    background-image: url("https://www.polsl.pl/wp-content/uploads/2024/10/targi-pracy-fot.-Maciej-Mutwil.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.eight {
+    background-image: url("https://nexiaproaudit.pl/wp-content/uploads/2025/05/TARGI-PRACY-03.2025.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.nine {
+    background-image: url("https://media.licdn.com/dms/image/v2/D4E12AQF7vxiguluYkg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1689322751241?e=2147483647&v=beta&t=17Xrk81lhLDHW5gY6TA7gdtTUcB9fz-yxavYl8yaCq8");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.ten {
+    background-image: url("https://markapracodawcy.pl/wp-content/uploads/2013/03/targi-pracy-3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.eleven {
+    background-image: url("https://justjoin.it/blog/storage/2019/10/future-3-1100x700.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.twelve {
+    background-image: url("https://biznesistyl.pl/app/uploads/2023/03/71786_targ.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+
+    .box {
+        width: 200px;
+        height: 200px;
+    }
+}
