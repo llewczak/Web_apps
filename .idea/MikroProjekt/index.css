@@ -1,5 +1,8 @@
 .photoBackground {
-    background-image: url("https://media.licdn.com/dms/image/v2/C4E1BAQEFgFqbZVsgeQ/company-background_1536_768/company-background_1536_768/0/1584002712799?e=2147483647&v=beta&t=wwcAQAndNQ2v18qKzeBsBlS5PN9GMjj5ZIzNVAaK32I");
+    background-image: url("./images/backgroundphoto.webp");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,7 +52,7 @@ main {
 
 .aboutUsPhotoContainer {
     margin-top: 20px;
-    background-image: url("https://www.shutterstock.com/image-photo/portrait-man-leader-arms-crossed-600nw-2478767423.jpg");
+    background-image: url("./images/aboutus.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -76,7 +79,7 @@ main {
 
 .mapPhotoContainer {
     margin-top: 30px;
-    background-image: url("./images/mapv2.png");
+    background-image: url("./images/map.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -85,7 +88,7 @@ main {
 
 .companyPhotoContainer {
     margin-top: 30px;
-    background-image: url("./images/companyphoto.jpg");
+    background-image: url("./images/companyphoto.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -164,5 +167,136 @@ ul {
         width: 350px;
         height: 300px;
         font-size: medium;
+        border-radius: 50px;
+    }
+
+    .aboutUsInfo {
+        order: 1;
+    }
+
+    .aboutUsPhotoContainer {
+        order: 2;
+    }
+
+    .whyUs {
+        order: 3;
+    }
+
+    .whyUsPhotoContainer {
+        order: 4;
+    }
+
+    .waiting {
+        order: 5;
+    }
+
+    .waitingPhotoContainer {
+        order: 6;
+    }
+
+    .mapInfo {
+        order: 7;
+    }
+
+    .mapPhotoContainer {
+        order: 8;
+    }
+
+    .companies {
+        order: 9;
+    }
+
+    .companyPhotoContainer {
+        order: 10;
+    }
+
+    .programInfo {
+        order: 11;
+    }
+
+    .programPhotoContainer {
+        order: 12;
+    }
+
+    .qrCodeInfo {
+        order: 13;
+    }
+
+    .qrCodePhotoContainer {
+        order: 14;
+    }
+}
+
+@media (max-width: 350px) {
+
+    main {
+        max-width: calc(350px);
+    }
+
+    .infoBox {
+        max-width: calc(350px);
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        font-size: 6px;
+        border-radius: 20px;
+    }
+
+    .aboutUsInfo {
+        order: 1;
+    }
+
+    .aboutUsPhotoContainer {
+        order: 2;
+    }
+
+    .whyUs {
+        order: 3;
+    }
+
+    .whyUsPhotoContainer {
+        order: 4;
+    }
+
+    .waiting {
+        order: 5;
+    }
+
+    .waitingPhotoContainer {
+        order: 6;
+    }
+
+    .mapInfo {
+        order: 7;
+    }
+
+    .mapPhotoContainer {
+        order: 8;
+    }
+
+    .companies {
+        order: 9;
+    }
+
+    .companyPhotoContainer {
+        order: 10;
+    }
+
+    .programInfo {
+        order: 11;
+    }
+
+    .programPhotoContainer {
+        order: 12;
+    }
+
+    .qrCodeInfo {
+        order: 13;
+    }
+
+    .qrCodePhotoContainer {
+        order: 14;
     }
 }

@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Galeria</title>
-    <link rel="stylesheet" href="./style.css"/>
-    <link rel="stylesheet" href="./gallery.css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fody Slider</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+
 </head>
+
 <body>
 <nav>
     <ul>
@@ -17,54 +22,138 @@
         <li><a href="contact.html">Kontakt</a></li>
     </ul>
 </nav>
-<div class="gallery">
-    <h1>Galeria</h1>
-    <div class="video-container">
-        <iframe width="1366" height="768" src="https://www.youtube.com/embed/2VscZxQ8zus?si=XtpujNBXg98-AGGA"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    <ul class="photos">
-        <li>
-            <div class="box one"></div>
-        </li>
-        <li>
-            <div class="box two"></div>
-        </li>
-        <li>
-            <div class="box three"></div>
-        </li>
-        <li>
-            <div class="box four"></div>
-        </li>
-        <li>
-            <div class="box five"></div>
-        </li>
-        <li>
-            <div class="box six"></div>
-        </li>
-        <li>
-            <div class="box seven"></div>
-        </li>
-        <li>
-            <div class="box eight"></div>
-        </li>
-        <li>
-            <div class="box nine"></div>
-        </li>
-        <li>
-            <div class="box ten"></div>
-        </li>
-        <li>
-            <div class="box eleven"></div>
-        </li>
-        <li>
-            <div class="box twelve"></div>
-        </li>
-    </ul>
-</div>
-<footer><p>Lukasz Lewczak</p></footer>
+<main>
+    <section id="tranding">
+        <div class="container">
+            <h2 class="text-center section-heading">Zobacz zdjęcia z poprzednich edycji!</h2>
+        </div>
+        <div class="container">
+            <div class="swiper tranding-slider">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="./images/gallery/galleryphoto1.webp" loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="./images/gallery/galleryphoto6.webp" loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="./images/gallery/galleryphoto13.webp" loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="./images/gallery/galleryphoto4.webp" loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="./images/gallery/galleryphoto5.webp" loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="./images/gallery/galleryphoto2.webp" loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="./images/gallery/galleryphoto7.webp" loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="./images/gallery/galleryphoto8.webp" loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="./images/gallery/galleryphoto9.webp" loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="./images/gallery/galleryphoto10.webp" loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="./images/gallery/galleryphoto11.webp" loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide tranding-slide">
+                        <div class="tranding-slide-img">
+                            <img src="./images/gallery/galleryphoto12.webp" loading="lazy">
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="tranding-slider-control">
+                    <div class="swiper-button-prev slider-arrow">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                    </div>
+                    <div class="swiper-button-next slider-arrow">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<video src="./images/galleryvideo.mp4" autoplay muted loop></video>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/ee5779ff9e.js" crossorigin="anonymous"></script>
+<script>
+    var TrandingSlider = new Swiper('.tranding-slider', {
+        effect: 'coverflow',
+        grabCursor: true,
+        preloadImages: false,
+        lazy: {
+            loadPrevNext: true,
+            loadPrevNextAmount: 2,
+        },
+        centeredSlides: true,
+        loop: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
+</script>
+<footer><p>Lukasz Lewczak</p></footer>
 </body>
+
 </html>
