@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Dla uczestników</title>
     <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./participants.css"/>
 </head>
 <body>
 <nav>
@@ -16,7 +17,110 @@
         <li><a href="contact.html">Kontakt</a></li>
     </ul>
 </nav>
+<div class="photoBackground">
+    <main>
+        <section id="qrGenerator">
+            <h2>Wygeneruj swój kod QR!</h2>
+            <p class="qrCodeText">W tym roku wprowadzamy możliwość wygenerowania osobistego kodu QR, który zawiera Twoje
+                dane
+                kontaktowe, linki do portfolio i profile zawodowe.</p>
+            <div class="generatorContainer">
+                <div class="formContainer">
+                    <form>
+                        <label for="firstname">Imie: <input type="text" id="firstName" name="firstname"
+                                                            required></label>
+                        <label for="lastname">Nazwisko: <input type="text" id="lastName" name="lastname"
+                                                               required></label>
+                        <label for="email">E-mail: <input type="email" id="email" name="email" required></label>
+                        <label for="cvLink">CV link: <input type="url" id="cvLink" name="cvLink" required></label>
+                        <label for="linkedInLink">LinkedIn link: <input type="url" id="linkedInLink" name="linkedInLink"
+                                                                        required></label>
+                        <label for="college">Uczelnia: <input type="text" id="college" name="college" required></label>
+                        <button type="button" id="qrCodeGenerate">Wygeneruj kod QR</button>
+                    </form>
+                </div>
+                <div class="qrContainer">
+                    <img id="generatedQRCode" src="./images/qrexample.png">
+                    <button type="button" id="qrCodeDownload" style="display:none;">Pobierz kod QR</button>
+                </div>
+            </div>
+        </section>
+        <section id="map">
+            <h2>Harmonogram: </h2>
+            <img src="./images/harmonogram.png"></img>
+        </section>
+        <section id="map">
+            <h2>Miejsce targów: </h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1280.7172720265273!2d20.008408817660204!3d50.059423114933765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47164526c9fc7757%3A0x7a74a448a9288c98!2sTargi%20w%20Krakowie%20Sp.%20z%20o.o.!5e0!3m2!1spl!2spl!4v1762277707273!5m2!1spl!2spl"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="FAQ">
+            <h2>FAQ</h2>
+            <details>
+                <summary><b>1.Kiedy i gdzie odbędą się targi pracy?</b></summary>
+                <p>Targi pracy odbędą się <b>15 maja 2026 roku w Hali Expo w Krakowie przy ul. Galicyjskej 9.</b></p>
+            </details>
+            <details>
+                <summary><b>2. Czy udział w targach jest płatny?</b></summary>
+                <p><b>Nie.</b> Udział w targach pracy dla uczestników jest całkowicie bezpłatny.</p>
+            </details>
+            <details>
+                <summary><b>3. Czy muszę się wcześniej zarejestrować?</b></summary>
+                <p>Rejestracja <b>nie jest obowiązkowa</b>.</p>
+            </details>
+            <details>
+                <summary><b>4. Jakie firmy będą obecne na targach?</b></summary>
+                <p>Na targach pojawią się pracodawcy z różnych branż: IT, finanse, marketing, produkcja, logistyka,
+                    edukacja i wiele innych.
+                    Pełna lista wystawców będzie dostępna na stronie głównej kilka dni przed wydarzeniem.</p>
+            </details>
+            <details>
+                <summary><b>5. Co warto zabrać ze sobą?</b></summary>
+                <p>Zalecamy zabrać:</p>
+                <ul>
+                    <li>-Wygenerowany kod QR z twoimi danymi</li>
+                    <li>-Notatnik i długopis</li>
+                    <li>-Uśmiech i pozytywne nastawienie 😊</li>
+                </ul>
+                <p>Możesz też przygotować krótką prezentację o sobie — wiele firm prowadzi rozmowy wstępne na
+                    miejscu.</p>
+            </details>
+            <details>
+                <summary><b>6. Czy mogę otrzymać pomoc przy pisaniu CV lub rozmowie kwalifikacyjnej?</b></summary>
+                <p>Tak! W specjalnej strefie doradczej będą dostępni konsultanci kariery, którzy pomogą poprawić CV,
+                    przygotować się do rozmowy i udzielą praktycznych wskazówek.</p>
+            </details>
+            <details>
+                <summary><b>7. Czy będą odbywać się warsztaty lub prezentacje?</b></summary>
+                <p>Tak, podczas wydarzenia odbędą się warsztaty, prelekcje i spotkania z rekruterami.
+                    Harmonogram znajdziesz na stronie głownej.</p>
+            </details>
+            <details>
+                <summary><b>8. Czy na miejscu będzie dostępny parking?</b></summary>
+                <p>Tak, przy Hali Expo znajduje się bezpłatny parking dla uczestników.
+                    Zachęcamy jednak do korzystania z komunikacji miejskiej – w pobliżu hali znajdują się przystanki
+                    autobusowe i tramwajowe.</p>
+            </details>
+            <details>
+                <summary><b>9. Czy wydarzenie jest dostępne dla osób z niepełnosprawnościami?</b></summary>
+                <p>Tak, Hala Expo jest w pełni przystosowana dla osób z ograniczoną mobilnością – posiada windy,
+                    szerokie wejścia i toalety dostępne dla osób z niepełnosprawnościami.</p>
+            </details>
+            <details>
+                <summary><b>7. Czy będą odbywać się warsztaty lub prezentacje?</b></summary>
+                <p>Tak, podczas wydarzenia odbędą się warsztaty, prelekcje i spotkania z rekruterami.
+                    Harmonogram znajdziesz poniżej.</p>
+            </details>
+
+        </section>
+    </main>
+</div>
 <footer><p>Lukasz Lewczak</p></footer>
+<script src="generator.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.4.4/qrcode.js"
+        integrity="sha512-oxrVyBhqnzQ0BzuM0A/6dEIk0alz0p4SpDRaWvtuUoarIc8rnL5lVniHG5Dp21MRFojcQcmKHjaskNXhSaUPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://kit.fontawesome.com/ee5779ff9e.js" crossorigin="anonymous"></script>
 </body>
 </html>
