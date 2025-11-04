@@ -1,0 +1,147 @@
+.photoBackground {
+    background-image: url("./images/backgroundphoto.webp");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    background: #1f2833;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    max-width: 1400px;
+    border-radius: 20px;
+    /*zoom:1.2;*/
+}
+
+h1 {
+    font-size: xx-large;
+    text-align: center;
+    color: whitesmoke;
+}
+
+h3 {
+    font-size: large;
+    text-align: start;
+    color: whitesmoke;
+}
+
+label {
+    color: whitesmoke;
+}
+
+input {
+    font-family: "Lato";
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    column-gap: 100px;
+}
+
+.container {
+    width: 500px;
+    height: 300px;
+}
+
+.companyData {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.personData {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.participationData {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.consent {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.checkboxConsent {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.box {
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1400px) {
+
+    main {
+        max-width: calc(2 * 400px + 200px);
+    }
+
+    .container {
+        width: 500px;
+        height: 400px;
+    }
+
+    .box {
+        width: 500px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    main {
+        max-width: calc(2 * 400px + 200px);
+    }
+
+    .container {
+        width: 400px;
+        height: 400px;
+    }
+
+    .box {
+        width: 400px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    main {
+        max-width: calc(2 * 250px + 200px);
+    }
+
+    .container {
+        width: 250px;
+        height: 400px;
+        font-size: small;
+    }
+
+    .box {
+        width: 250px;
+    }
+
+}

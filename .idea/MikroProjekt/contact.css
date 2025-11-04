@@ -1,0 +1,129 @@
+.photoBackground {
+    background-image: url("./images/backgroundphoto.webp");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background: #1f2833;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-radius: 20px;
+    max-width: 1000px;
+    width: 1000px;
+    height: auto;
+}
+
+h2 {
+    font-size: xx-large;
+    text-align: center;
+    color: whitesmoke;
+}
+
+label {
+    color: whitesmoke;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+li {
+    color: whitesmoke;
+}
+
+input, select{
+    border-radius: 5px;
+    font-family: "Lato";
+}
+
+.container {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.messageTextBox {
+    width: 400px;
+    height: 300px;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+@media (max-width: 1050px) {
+    main {
+        width: 800px;
+    }
+
+    .container {
+        width: 500px;
+    }
+}
+
+@media (max-width: 850px) {
+    main {
+        width: 600px;
+    }
+
+    .container {
+        width: 400px;
+    }
+}
+
+@media (max-width: 650px) {
+    main {
+        width: 400px;
+    }
+
+    h2 {
+        font-size: large;
+    }
+
+    .messageTextBox {
+        width: 300px;
+        height: 300px;
+    }
+
+    .container {
+        width: 350px;
+    }
+
+    form {
+        width: 350px;
+    }
+}
+
+@media (max-width: 450px) {
+    main {
+        width: 300px;
+    }
+
+    .container {
+        width: 250px;
+    }
+
+    form {
+        width: 250px;
+    }
+
+    .messageTextBox {
+        width: 200px;
+        height: 200px;
+    }
+}
