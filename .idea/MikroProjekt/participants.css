@@ -208,6 +208,36 @@ input {
 
 @media (max-width: 450px) {
     main {
+        width: 300px;
+    }
+
+    section {
+        width: 200px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+    }
+
+    img {
+        width:170px;
+        height:auto;
+        border-radius: 10px;
+    }
+
+    #generatedQRCode {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 350px) {
+    main {
         width: 200px;
     }
 
