@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Cwiczenie 3</title>
+    <style>
+        table {
+            zoom: 0.75;
+        }
+    </style>
 </head>
 <body>
-
+<input type="text" id="filterText" placeholder="Wyszukaj">
+<select id="filterSelect">
+    <option value="descending">malejąco</option>
+    <option value="ascending">rosnąco</option>
+    <option value="oryginal" selected="selected">oryginalna kolejnosc</option>
+</select>
+<div id="tableContainer"></div>
+<script src="cwiczenie3.js"></script>
 </body>
 </html>

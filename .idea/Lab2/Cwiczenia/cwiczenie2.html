@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Cwiczenie 2</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        button {
+            width: 100px;
+            text-wrap: wrap;
+        }
+    </style>
 </head>
 <body>
-
+<form>
+    <label for="minLength">Minimalna długość hasła:<input type="text" id="minLength" name="minLength"></label>
+    <label for="maxLength">Maksymalna długość hasła:<input type="text" id="maxLength" name="maxLength"></label>
+    <label for="capitalLetters">Czy hasło ma zawierać wielkie litery:<input type="checkbox" id="capitalLetters"
+                                                                            name="capitalLetters"></label>
+    <label for="specialChar">Czy hasło ma zawierać znaki specjalne:<input type="checkbox" id="specialChar"
+                                                                          name="specialChar"></label>
+    <button id="generateButton" type="button">Wygeneruj hasło</button>
+</form>
+<div id="generatedPassword">Twoje hasło</div>
+<script src="cwiczenie2.js"></script>
 </body>
 </html>
