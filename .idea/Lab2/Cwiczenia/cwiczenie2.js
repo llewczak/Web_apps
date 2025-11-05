@@ -26,5 +26,6 @@ function displayPassword(password) {
 generateButton.addEventListener('click', function () {
     var password = generatePassword(
         parseInt(minLength.value), parseInt(maxLength.value), capitalLetters.checked, specialChar.checked);
+    alert(password);
     displayPassword(password);
 });
