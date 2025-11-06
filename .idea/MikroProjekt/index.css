@@ -1,0 +1,303 @@
+.photoBackground {
+    background-image: url("./images/backgroundphoto.webp");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    margin-bottom: 10px;
+    flex: 1;
+    background: #1f2833;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: calc(2 * 600px + 150px);
+    border-radius: 20px;
+}
+
+#headerMainPage {
+    text-align: center;
+    color: black;
+}
+
+.infoBox {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: calc(2 * 600px + 150px);
+}
+
+.box {
+    width: 600px;
+    height: 600px;
+    text-align: start;
+    text-wrap: wrap;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.programInfo {
+    font-size: 130%;
+}
+
+.aboutUsPhotoContainer {
+    margin-top: 20px;
+    background-image: url("./images/aboutus.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+}
+
+.whyUsPhotoContainer {
+    margin-top: 20px;
+    background-image: url("https://www.verywellmind.com/thmb/z1dX2tdPxvma1s0hw02s_XHnEB0=/3698x0/filters:no_upscale():max_bytes(150000):strip_icc()/business-people-shaking-hands-outside-of-office-building-521813417-5954fdc33df78cdc2970d5ac.jpg");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+}
+
+.waitingPhotoContainer {
+    margin-top: 20px;
+    background-image: url("https://www.boredpanda.com/blog/wp-content/uploads/2023/04/644a230e3f5d4_l7ink8py2vta1__700.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 500px;
+}
+
+.mapPhotoContainer {
+    margin-top: 30px;
+    background-image: url("./images/map.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+}
+
+.companyPhotoContainer {
+    margin-top: 30px;
+    background-image: url("./images/companyphoto.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+}
+
+.programPhotoContainer {
+    margin-top: 30px;
+    background-image: url("https://www.sessionlab.com/wp-content/uploads/Collaborative-workshop.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+}
+
+.qrCodePhotoContainer {
+    margin-top: 30px;
+    background-image: url("https://play-lh.googleusercontent.com/lomBq_jOClZ5skh0ELcMx4HMHAMW802kp9Z02_A84JevajkqD87P48--is1rEVPfzGVf");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+}
+
+p {
+    margin: 5px;
+    color: whitesmoke;
+}
+
+h1 {
+    color: whitesmoke;
+    text-shadow: black 5px 5px 5px;
+    font-size: xxx-large;
+}
+
+h3 {
+    color: whitesmoke;
+}
+
+li {
+    color: whitesmoke;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+@media (max-width: 1400px) {
+
+    main {
+        max-width: calc(2 * 600px + 100px);
+    }
+
+    .infoBox {
+        max-width: calc(2 * 400px + 100px);
+    }
+
+    .box {
+        width: 400px;
+        height: 400px;
+        font-size: medium;
+    }
+}
+
+@media (max-width: 900px) {
+
+    main {
+        max-width: calc(650px);
+    }
+
+    .infoBox {
+        max-width: calc(650px);
+    }
+
+    .box {
+        width: 350px;
+        height: 300px;
+        font-size: medium;
+        border-radius: 50px;
+    }
+
+    .aboutUsInfo {
+        order: 1;
+    }
+
+    .aboutUsPhotoContainer {
+        order: 2;
+    }
+
+    .whyUs {
+        order: 3;
+    }
+
+    .whyUsPhotoContainer {
+        order: 4;
+    }
+
+    .waiting {
+        order: 5;
+    }
+
+    .waitingPhotoContainer {
+        order: 6;
+    }
+
+    .mapInfo {
+        order: 7;
+    }
+
+    .mapPhotoContainer {
+        order: 8;
+    }
+
+    .companies {
+        order: 9;
+    }
+
+    .companyPhotoContainer {
+        order: 10;
+    }
+
+    .programInfo {
+        order: 11;
+    }
+
+    .programPhotoContainer {
+        order: 12;
+    }
+
+    .qrCodeInfo {
+        order: 13;
+    }
+
+    .qrCodePhotoContainer {
+        order: 14;
+    }
+}
+
+@media (max-width: 350px) {
+
+    main {
+        max-width: calc(350px);
+    }
+
+    .infoBox {
+        max-width: calc(350px);
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        font-size: 6px;
+        border-radius: 20px;
+    }
+
+    .aboutUsInfo {
+        order: 1;
+    }
+
+    .aboutUsPhotoContainer {
+        order: 2;
+    }
+
+    .whyUs {
+        order: 3;
+    }
+
+    .whyUsPhotoContainer {
+        order: 4;
+    }
+
+    .waiting {
+        order: 5;
+    }
+
+    .waitingPhotoContainer {
+        order: 6;
+    }
+
+    .mapInfo {
+        order: 7;
+    }
+
+    .mapPhotoContainer {
+        order: 8;
+    }
+
+    .companies {
+        order: 9;
+    }
+
+    .companyPhotoContainer {
+        order: 10;
+    }
+
+    .programInfo {
+        order: 11;
+    }
+
+    .programPhotoContainer {
+        order: 12;
+    }
+
+    .qrCodeInfo {
+        order: 13;
+    }
+
+    .qrCodePhotoContainer {
+        order: 14;
+    }
+}

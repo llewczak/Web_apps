@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dla firm</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./companies.css"/>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="index.html"><i class="fa-regular fa-house"></i></a></li>
+        <li><a href="gallery.html">Galeria</a></li>
+        <li><a href="participants.html">Dla uczestników</a></li>
+        <li><a href="companies.html">Dla firm</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+</nav>
+<div class="photoBackground">
+    <main>
+        <h1>Zgłoś swoją firmę na <b>Career Expo 2026!</b></h1>
+        <form>
+            <div class="container companyData">
+                <h3>Dane firmy:</h3>
+                <div>
+                    <label for="cname">Nazwa firmy: </label>
+                    <input type="text" id="cname" name="cname" required>
+                </div>
+                <div>
+                    <label for="topic">Branża: </label>
+                    <select id="topic" name="topic" required>
+                        <option value="" selected disabled>Wybierz branżę</option>
+                        <option value="it">IT</option>
+                        <option value="telecommunication">Telekomunikacja</option>
+                        <option value="carIndustry">Przemysł samochodowy</option>
+                        <option value="construction">Budownictwo</option>
+                        <option value="education">Edukacja</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="mail">E-mail: </label>
+                    <input type="email" id="mail" name="mail" required>
+                </div>
+                <div>
+                    <label for="description">Krótki opis:</label>
+                    <input type="text" id="description" name="description" required>
+                </div>
+                <div>
+                    <label for="website">Strona www:</label>
+                    <input type="url" id="website" name="website" required>
+                </div>
+                <div>
+                    <label for="linkedin">LinkedIn:</label>
+                    <input type="url" id="linkedin" name="linkedin" required>
+                </div>
+            </div>
+            <div class="container personData">
+                <h3>Dane kontakowe osoby zgłaszającej:</h3>
+                <div>
+                    <label for="fname">Imie: </label>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+                <div>
+                    <label for="lname">Nazwisko: </label>
+                    <input type="text" id="lname" name="lname">
+                </div>
+                <div>
+                    <label for="position">Stanowisko:</label>
+                    <input type="text" id="position" name="position" required>
+                </div>
+                <div>
+                    <label for="mail">E-mail: </label>
+                    <input type="email" id="mail" name="mail" required>
+                </div>
+                <div>
+                    <label for="phoneNumber">Telefon: </label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                </div>
+            </div>
+            <div class="container participationData">
+                <h3>Informacje o udziale:</h3>
+                <div>
+                    <label for="participation">Czy firma brała już udział w poprzednich edycjach targów:</label><br>
+
+                    <input type="radio" id="yes" name="participation" value="yes">
+                    <label for="yes">Tak</label>
+
+                    <input type="radio" id="no" name="participation" value="no">
+                    <label for="no">Nie</label>
+                </div>
+                <div>
+                    <label for="preference">Preferowany rodzaj stoiska:</label><br>
+
+                    <input type="radio" id="small" name="preference" value="small">
+                    <label for="small">Małe</label>
+
+                    <input type="radio" id="standard" name="preference" value="standard">
+                    <label for="standard">Standardowe</label>
+
+                    <input type="radio" id="premium" name="preference" value="premium">
+                    <label for="premium">Premium</label>
+                </div>
+                <div>
+                    <label for="numberOfPeople">Liczba przedstawicieli firmy na miejscu:</label>
+                    <input type="number" id="numberOfPeople" name="numberOfPeople" min="1" max="99" value="0">
+                </div>
+                <div class="checkBoxExtra">
+                    <label for="extra">Dodatkowy sprzęt lub usługi:</label><br>
+
+                    <input type="checkbox" id="table" name="extra" value="table">
+                    <label for="table">Stół</label>
+
+                    <input type="checkbox" id="screen" name="extra" value="screen">
+                    <label for="screen">Ekran</label>
+
+                    <input type="checkbox" id="banners" name="extra" value="banners">
+                    <label for="banners">Banery</label>
+
+                    <input type="checkbox" id="internet" name="extra" value="internet">
+                    <label for="internet">Internet</label>
+                </div>
+            </div>
+            <div class="container consent">
+                <h3>Zgody:</h3>
+                <div class="checkboxConsent">
+
+                    <label for="rules"><input type="checkbox" id="rules" name="rules" value="rules" required>Akceptuje regulaminu
+                        udziału w targach</label>
+
+                    <label for="rodo"><input type="checkbox" id="rodo" name="rodo" value="rodo" required>Zgoda na przetwarzanie
+                        danych osobowych (RODO)</label>
+
+                    <label for="publication"><input type="checkbox" id="publication" name="publication"
+                                                    value="publication" required>Zgoda na publikację logo i opisu firmy na
+                        stronie targów</label>
+
+                </div>
+            </div>
+            <div class="box submitButton">
+                <input type="submit">
+            </div>
+        </form>
+    </main>
+</div>
+<footer><p>Lukasz Lewczak</p></footer>
+<script src="https://kit.fontawesome.com/ee5779ff9e.js" crossorigin="anonymous"></script>
+</body>
+</html>
