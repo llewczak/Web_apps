@@ -85,13 +85,17 @@ class mainScene {
             if (this.bird.y < 500) {
                 this.birdVelocity += this.gravity;
                 this.bird.y += this.birdVelocity;
-                this.bird.setTexture('birdDown');
-                this.bird.angle = 20;
             }
             if (Phaser.Input.Keyboard.JustDown(this.arrow.space) && this.bird.y > 10) {
                 this.birdVelocity = this.jumpStrength;
-                this.bird.setTexture('birdUp');
+            }
+
+            if (this.birdVelocity <= 0){
+                this.bird.setTexture('birdDown');
                 this.bird.angle = -20;
+            } else{
+                this.bird.setTexture('birdUp');
+                this.bird.angle = 20;
             }
 
             //pipes behaviour
