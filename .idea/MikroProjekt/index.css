@@ -119,6 +119,10 @@ p {
     color: whitesmoke;
 }
 
+a {
+    color: whitesmoke;
+}
+
 h1 {
     color: whitesmoke;
     text-shadow: black 5px 5px 5px;
@@ -239,9 +243,9 @@ ul {
     }
 
     .box {
-        width: 100px;
-        height: 100px;
-        font-size: 6px;
+        width: 200px;
+        height: 200px;
+        font-size: 10px;
         border-radius: 20px;
     }
 

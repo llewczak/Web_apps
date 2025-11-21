@@ -4,18 +4,47 @@
     <meta charset="UTF-8">
     <title>Cwiczenie 3</title>
     <style>
-        table {
-            zoom: 0.75;
+
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
+
+        .search-sort-container {
+            width: 98vw;
+            height: 50px;
+            background-color: darkgrey;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 0px 20px;
+        }
+
+        tr {
+            width: 98vw;
+            height: 100px;
+        }
+
+        img {
+            height: 100px;
+        }
+
     </style>
 </head>
 <body>
-<input type="text" id="filterText" placeholder="Wyszukaj">
-<select id="filterSelect">
-    <option value="descending">malejąco</option>
-    <option value="ascending">rosnąco</option>
-    <option value="oryginal" selected="selected">oryginalna kolejnosc</option>
-</select>
+<div class="search-sort-container">
+    <input type="text" id="filterText" placeholder="Wyszukaj">
+    <select id="filterSelect">
+        <option value="descending">malejąco</option>
+        <option value="ascending">rosnąco</option>
+        <option value="oryginal" selected="selected">oryginalna kolejnosc</option>
+    </select>
+</div>
 <div id="tableContainer"></div>
 <script src="cwiczenie3.js"></script>
 </body>
