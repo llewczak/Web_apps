@@ -146,6 +146,10 @@ class mainScene {
         this.pipeSecondUp.x = 400;
         this.pipeSecondUp.y = 70;
 
+        this.birdVelocity = 0;
+        this.gravity = 0.4;
+        this.jumpStrength = -7;
+
         this.running = true;
         this.message.setVisible(false);
         this.gameOver.setVisible(false);
