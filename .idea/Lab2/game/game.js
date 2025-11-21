@@ -56,6 +56,11 @@ class mainScene {
 
         //gamestate
         this.running = false;
+
+        //gravity
+        this.birdVelocity = 0;
+        this.gravity = 0.4;
+        this.jumpStrength = -7;
     }
 
     update() {
@@ -78,12 +83,13 @@ class mainScene {
 
             //bird behaviour
             if (this.bird.y < 500) {
-                this.bird.y += 3;
+                this.birdVelocity += this.gravity;
+                this.bird.y += this.birdVelocity;
                 this.bird.setTexture('birdDown');
                 this.bird.angle = 20;
             }
-            if (this.arrow.space.isDown && this.bird.y > 10) {
-                this.bird.y -= 10;
+            if (Phaser.Input.Keyboard.JustDown(this.arrow.space) && this.bird.y > 10) {
+                this.birdVelocity = this.jumpStrength;
                 this.bird.setTexture('birdUp');
                 this.bird.angle = -20;
             }
@@ -160,7 +166,7 @@ class mainScene {
     }
 
     updateScoreboard() {
-        const style = { fontFamily: '"Press Start 2P"', fontSize: '10px', fill: '#fff' };
+        const style = {fontFamily: '"Press Start 2P"', fontSize: '10px', fill: '#fff'};
         this.scoreboard.removeAll(true);
         const scores = this.loadScores();
         this.scoreboard.add(this.add.text(144, 150, 'SCOREBOARD', style).setOrigin(0.5, 0.5));
