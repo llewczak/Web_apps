@@ -1,0 +1,101 @@
+### 1Rejestracja nowego użytkownika
+POST http://localhost:3001/register
+Content-Type: application/json
+
+{
+  "email": "jan@test.com",
+  "password": "moje_tajne_haslo"
+}
+
+### 1 Logowanie
+POST http://localhost:3001/login
+Content-Type: application/json
+
+{
+  "email": "jan@test.com",
+  "password": "moje_tajne_haslo"
+}
+
+> {%
+    client.global.set("auth_token", response.body.token);
+    client.log("Token zapisany: " + response.body.token);
+%}
+
+### 2 Dodanie nowej książki
+POST http://localhost:3002/books
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+  "title": "Ksiazka 1",
+  "author": "Anonim 1",
+  "year": 1993
+}
+
+### 2 Dodanie drugiej książki
+POST http://localhost:3002/books
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+  "title": "Ksiazka 2",
+  "author": "Anonim 2",
+  "year": 2008
+}
+
+### 2 Pobranie listy wszystkich książek
+GET http://localhost:3002/books
+Authorization: Bearer {{auth_token}}
+
+### 3 Złożenie zamówienia
+POST http://localhost:3003/orders
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+  "bookId": 1,
+  "quantity": 2
+}
+
+### 3 Złożenie zamówienia na BookId: 2
+POST http://localhost:3003/orders
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+  "bookId": 2,
+  "quantity": 1
+}
+
+### 3 Pobranie moich zamówień
+
+GET http://localhost:3003/orders/{{userId}}
+Authorization: Bearer {{auth_token}}
+
+### 3 Edycja ilości w zamówieniu
+
+PATCH http://localhost:3003/orders/1
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+  "quantity": 10
+}
+
+### 3 Usunięcie zamówienia
+
+DELETE http://localhost:3003/delete/1
+Authorization: Bearer {{auth_token}}
+
+### 4 Próba kupna nieistniejącej książki (404)
+POST http://localhost:3003/orders
+Content-Type: application/json
+Authorization: Bearer {{auth_token}}
+
+{
+  "bookId": 999,
+  "quantity": 1
+}
+
+### 4 Próba dostępu bez tokenu (401)
+GET http://localhost:3002/books
